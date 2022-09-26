@@ -5,9 +5,12 @@
 	<meta charset="UTF-8">
 	<title>MICAPA | La Radio del camino</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelementplayer.min.css'>
-	<link rel='stylesheet' href='css/style.css'>
-	<link rel="icon" type="image/x-icon" href="content/icon/MICAPALOGO.png">
+	<link rel='stylesheet' href='content/css/mediaelementplayer.min.css'>
+	<link rel='stylesheet' href='content/css/style.css'>
+	<link rel='stylesheet' href='content/css/audio-tag.css'>
+
+	<link rel="icon" type="image/x-icon" href="files/SVG/micapa@LOGO.svg">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -17,35 +20,40 @@
 
 <body>
 	<!-- partial:index.partial.html -->
-	<article class="content-player">
+	<div class="row">
+		<div class="col">
+			<article class="content-player">
 
-		<div>
-			<div class="subtitle" id='sonic_listeners'></div>
-			<img class="logo-player"
-				src="content/icon/MICAPALOGO.png"
-				alt="micapa-logo">
+				<div>
+					<div class="subtitle" id='sonic_listeners'></div>
+					<img class="logo-player" src="content/files/icon/MICAPALOGO.png" alt="micapa-logo">
+				</div>
+
+				<div class="contenedor">
+					<h2 class="radio-text">La Radio del Camino</h2>
+					<h3 class="subtitle">MICAPA</h3>
+					<div id='sonic_title'></div>
+				</div>
+
+
+				<audio class="audio" controls="controls" autoplay>
+					<source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
+				</audio>
+
+			</article>
 		</div>
+		<div class="col">
 
-		<div class="contenedor">
-			<h2 class="radio-text">La Radio del Camino</h2>
-			<h3 class="subtitle">MICAPA</h3>
-			<div id='sonic_title'></div>
 		</div>
-	
+	</div>
 
-		<audio class="audio" controls="controls" autoplay>
-			<source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
-		</audio>
+	<link href="content/addons/footer.html" rel="import" />
 
-	</article>
 
-		<!-- partial -->
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js'></script>
-		<script src="javascript/player.js"></script>
+	<!-- partial -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js'></script>
+	<script src="content/javascript/player.js"></script>
 
 
 </body>
-
-
-</html>
