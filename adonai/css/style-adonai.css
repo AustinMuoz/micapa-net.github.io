@@ -1,0 +1,730 @@
+/* Import font Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+}
+
+
+:root {
+    --Main-font-family: 'Roboto Mono', monospace;
+    --colorOrange: #de4600;
+    --sum-px: 3px;
+    --fontSize: calc(14px + var(--sum-px));
+    --note-left: calc(9px + var(--sum-px));
+    --note-s-left: calc(18px + var(--sum-px));
+    --note-m-left: calc(18px + var(--sum-px));
+    --note-b-left: calc(18px + var(--sum-px));
+    --note-7-left: calc(18px + var(--sum-px));
+    --note-sm-left: calc(27px + var(--sum-px));
+    --note-m7-left: calc(27px + var(--sum-px));
+    --note-s7-left: calc(27px + var(--sum-px));
+    --note-sm7-left: calc(36px + var(--sum-px));
+    --note-sus2-left: calc(45px + var(--sum-px));
+    --note-sus4-left: calc(45px + var(--sum-px));
+
+    --top-before: calc(-16px - (var(--sum-px)/4));
+}
+
+.information {
+    background-color: #f5f5f5;
+    color: #313131;
+    padding: 50px 50px 50px 50px;
+    margin-top: 10px;
+    max-width: 500px;
+    max-height: 500px;
+    border-color: #9b9b9b;
+    border-style: solid;
+    border-width: 5px;
+}
+
+iframe {
+    width: 500px;
+    height: 373px;
+}
+
+.video-yt {
+    max-width: 500px;
+    max-height: 500px;
+    align-content: center;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+center {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 50px;
+    color: #3f3f3f;
+    font-family: var(--Main-font-family);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding: 50px 100px 50px 100px;
+    margin-bottom: 40px;
+}
+
+.content-chords {
+    background-color: #f5f5f5;
+    padding-left: 8px;
+    padding-right: 0px;
+    padding-top: 2px;
+    margin-top: 10px;
+    border-top: #de4600;
+    border-top-style: solid;
+    border-bottom: #3f3f3f;
+    border-bottom-style: solid;
+    border-width: 5px;
+    max-width: 100%;
+    z-index: 20;
+}
+
+/* .chords{
+    max-width: 1920px;
+} */
+
+.col-sm {
+    border-left: #b89478;
+    border-right: #b89478;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+
+h2 {
+    color: #39444b;
+    font-family: var(--Main-font-family);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #0072b4;
+    font-family: var(--Main-font-family);
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+p {
+    color: #444;
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 400;
+}
+
+p.phrase {
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+.et_link_content.et_pb_text_color_light {
+    display: none;
+}
+
+p.note {
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+    line-height: 0.5;
+}
+
+.notes-group {
+    color: var(--colorOrange);
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 600;
+}
+
+.notes {
+    color: var(--colorOrange);
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    margin-left: -8px;
+}
+
+
+.notes-b,
+.notes-s,
+.notes-m,
+.notes-7 {
+    color: var(--colorOrange);
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    margin-left: -17px;
+}
+
+
+.notes-m7,
+.notes-sm {
+    color: var(--colorOrange);
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    margin-left: -25px;
+}
+
+
+.notes-sm7 {
+    color: var(--colorOrange);
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    margin-left: -33px;
+}
+
+.notes-sus2,
+.notes-sus4 {
+    color: var(--colorOrange);
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    margin-left: -45px;
+}
+
+br {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.phrase {
+    color: #444;
+    font-family: var(--Main-font-family);
+    font-size: var(--fontSize);
+    font-weight: 500;
+}
+
+/*Escalas mayor naturales*/
+.C::before {
+    content: "C";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+.D::before {
+    content: "D";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+.E::before {
+    content: "E";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+.F::before {
+    content: "F";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+.G::before {
+    content: "G";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+.A::before {
+    content: "A";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+
+.B::before {
+    content: "B";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-left);
+}
+
+
+/*Escalas mayor sostenidos*/
+.Cs::before {
+    content: "C#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+.Ds::before {
+    content: "D#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+.Es::before {
+    content: "E#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+.Fs::before {
+    content: "F#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+.Gs::before {
+    content: "G#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+.As::before {
+    content: "A#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+
+.Bs::before {
+    content: "B#";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-s-left);
+}
+
+/*Escalas mayor bemos*/
+.Cb::before {
+    content: "Cb";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+.Db::before {
+    content: "Db";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+.Eb::before {
+    content: "Eb";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+.Fb::before {
+    content: "Fb";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+.Gb::before {
+    content: "Gb";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+.Ab::before {
+    content: "Ab";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+
+.Bb::before {
+    content: "Bb";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-b-left);
+}
+
+/*Escalas menores naturales*/
+
+.Cm::before {
+    content: "Cm";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+.Dm::before {
+    content: "Dm";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+.Em::before {
+    content: "Em";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+.Fm::before {
+    content: "Fm";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+.Gm::before {
+    content: "Gm";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+.Am::before {
+    content: "Am";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+
+.Bm::before {
+    content: "Bm";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m-left);
+}
+
+
+/*Escalas menores sostenidos*/
+
+.Csm::before {
+    content: "C#m";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+.Dsm::before {
+    content: "D#m";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+.Esm::before {
+    content: "E#m";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+.Fsm::before {
+    content: "F#m";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+.Gsm::before {
+    content: "G#m";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+.Asm::before {
+    content: "A#m";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+.Bsm::before {
+    content: "Bm";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm-left);
+}
+
+/* Escalas 7*/
+.C7::before {
+    content: "C7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+.D7::before {
+    content: "D7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+.E7::before {
+    content: "E7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+.F7::before {
+    content: "F7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+.G7::before {
+    content: "G7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+.A7::before {
+    content: "A7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+
+.B7::before {
+    content: "B7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-7-left);
+}
+
+
+/* Escalas m7*/
+.Cm7::before {
+    content: "Cm7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+.Dm7::before {
+    content: "Dm7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+.Em7::before {
+    content: "Em7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+.Fm7::before {
+    content: "Fm7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+.Gm7::before {
+    content: "Gm7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+.Am7::before {
+    content: "Am7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+
+.Bm7::before {
+    content: "Bm7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-m7-left);
+}
+
+/* Escalas #m7*/
+.Csm7::before {
+    content: "C#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+.Dsm7::before {
+    content: "D#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+.Esm7::before {
+    content: "E#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+.Fsm7::before {
+    content: "F#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+.Gsm7::before {
+    content: "G#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+.Asm7::before {
+    content: "A#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+
+.Bsm7::before {
+    content: "B#m7";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sm7-left);
+}
+
+
+/* Acordes SUS2*/
+.Csus2::before {
+    content: "Csus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+.Dsus2::before {
+    content: "Dsus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+.Esus2::before {
+    content: "Esus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+.Fsus2::before {
+    content: "Fsus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+.Gsus2::before {
+    content: "Gsus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+.Asus2::before {
+    content: "Asus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+.Bsus2::before {
+    content: "Bsus2";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus2-left);
+}
+
+/* Acordes SUS4*/
+.Csus4::before {
+    content: "Csus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+.Dsus4::before {
+    content: "Dsus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+.Esus4::before {
+    content: "Esus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+.Fsus4::before {
+    content: "Fsus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+.Gsus4::before {
+    content: "Gsus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+.Asus4::before {
+    content: "Asus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+.Bsus4::before {
+    content: "Bsus4";
+    position: relative;
+    top: var(--top-before);
+    left: var(--note-sus4-left);
+}
+
+
+/* Barra / */
+.Barr::before {
+    content: "/";
+    position: relative;
+    top: var(--top-before);
+    left: 9px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    iframe {
+        width: 440px;
+        height: 373px;
+    }
+}

@@ -1,0 +1,82 @@
+/* Import font Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --Main-font-family: 'Roboto Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-bar {
+    position: -webkit-sticky;
+    bottom: 0;
+    position: fixed;
+    width: 80%;
+    height: 50px;
+    padding: 10px 15px 5px 15px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    border: 2px solid #a3a3a3;
+    border-radius: 50px;
+    background-color: #f3f3f3;
+    text-align: center;
+    z-index: 100;
+}
+
+div.content-link {
+    background-color: #cfcfcf;
+    border-radius: 50px;
+    display:block;
+    overflow:hidden;
+
+}
+
+div.content-link:hover{
+    animation-name: expand;
+    background-color: #de4600;
+    animation-duration: 1s;
+}
+
+div.content-link:active{
+    background-color: #383838;
+}
+
+/*a:link, a:visited, a:active*/
+
+a.link {
+    color: #494949;
+    width: 100%;
+    font-family: var(--Main-font-family);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: auto;
+    display:block;
+}
+
+a.link:hover {
+    color: #f3f3f3;
+
+}
+
+a.link:active, a.link:visited, a.link:link {
+    text-decoration: none;
+}
+
+@keyframes expand {
+    0% {
+      width: 80%;
+      margin: auto;
+    }
+    50%{
+        width: 101%;
+        margin: auto;
+    }
+    100% {
+        width: 100%;
+        margin: auto;
+    }
+  }

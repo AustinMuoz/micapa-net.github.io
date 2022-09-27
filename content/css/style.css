@@ -1,134 +1,134 @@
 @import 'https://fonts.googleapis.com/css?family=Lato';
 
-	* {
-		outline: none;
-	}
+* {
+	outline: none;
+}
 
-	body {
-		background: #fff;
-		font-family: 'Lato';
-	}
+body {
+	background: #fff;
+	font-family: 'Lato';
+}
 
-	/*👇 for preload play/pause svg*/
-	body:after {
-		position: absolute;
-		width: 0;
-		height: 0;
-		overflow: hidden;
-		z-index: -1;
-		content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg);
-	}
+/*👇 for preload play/pause svg*/
+body:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+	content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg);
+}
 
+.content-player {
+	position: absolute;
+	width: 50%;
+	height: 450px;
+	top: 0px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	padding: 5px 5%;
+	text-align: center;
+	box-sizing: border-box;
+	/*box-shadow: 0 0 21px 0px rgba(0,0,0,0.3);*/
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
 	.content-player {
-		position: absolute;
-		width: 50%;
-		height: 450px;
-		top: 0px;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		margin: auto;
-		padding: 5px 5%;
-		text-align: center;
-		box-sizing: border-box;
-		/*box-shadow: 0 0 21px 0px rgba(0,0,0,0.3);*/
-		border-radius: 10px;
-	}
-
-	@media only screen and (max-width: 900px) {
-		.content-player {
-			width: 95%;
-		}
-
-		.cont h3 {
-			font-size: 5px;
-		}
-
-
-		.cont time {
-			font-family: 'Lato';
-			font-size: 12px;
-			color: #999;
-
-		}
-	}
-
-	.cont {
-		margin-bottom: 28px;
+		width: 95%;
 	}
 
 	.cont h3 {
-		font-family: 'Lato';
-		font-size: 50px;
-		margin: 0 0 10px 0;
-		color: #6a6a6a;
+		font-size: 5px;
 	}
+
 
 	.cont time {
 		font-family: 'Lato';
-		font-size: 20px;
+		font-size: 12px;
 		color: #999;
 
 	}
+}
+
+.cont {
+	margin-bottom: 28px;
+}
+
+.cont h3 {
+	font-family: 'Lato';
+	font-size: 50px;
+	margin: 0 0 10px 0;
+	color: #6a6a6a;
+}
+
+.cont time {
+	font-family: 'Lato';
+	font-size: 20px;
+	color: #999;
+
+}
 
 
 
-    @media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {}
 
-    .embed-container {
-        position: relative;
-        /*padding-bottom: 690px;*/
-    }
-    
-    .embed-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
-    img.logo-player {
-        width: 30%;
-        margin: auto;
-    }
-    
-    h2.radio-text {
-        font-family: 'Nunito', sans-serif;
-        color: #32A6D8;
-        font-weight: 900;
-        font-size: 22px;
-    }
-    
-    h3.subtitle {
-        font-family: 'Nunito''bold', sans-serif;
-        color: #2b9e07;
-        font-weight: 600;
-    }
-    
-    #sonic_title {
-        font-family: 'Nunito''bold', sans-serif;
-        color: #555555;
-        font-weight: 500;
-    }
-    
-    #sonic_listeners {
-        font-family: 'Nunito''bold', sans-serif;
-        color: #ffffff;
-        font-weight: 500;
-    }
-    
-    #sonic_listeners::before {
-        content: "Oyentes: ";
-    }
-    
-    .contenedor {
-        margin-top: 50px;
-    }
-    
-    .audio {
-        margin-top: 30px;
-    }
+.embed-container {
+	position: relative;
+	/*padding-bottom: 690px;*/
+}
+
+.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img.logo-player {
+	width: 30%;
+	margin: auto;
+}
+
+h2.radio-text {
+	font-family: 'Nunito', sans-serif;
+	color: #32A6D8;
+	font-weight: 900;
+	font-size: 22px;
+}
+
+h3.subtitle {
+	font-family: 'Nunito''bold', sans-serif;
+	color: #2b9e07;
+	font-weight: 600;
+}
+
+#sonic_title {
+	font-family: 'Nunito''bold', sans-serif;
+	color: #555555;
+	font-weight: 500;
+}
+
+#sonic_listeners {
+	font-family: 'Nunito''bold', sans-serif;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+#sonic_listeners::before {
+	content: "Oyentes: ";
+}
+
+.contenedor {
+	margin-top: 50px;
+}
+
+.audio {
+	margin-top: 30px;
+}
 
 
 
