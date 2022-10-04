@@ -20,7 +20,27 @@
 	<!-- Social Media -->
 	<link rel="stylesheet" href="content/css/social-media.css">
 	<!-- Font Awesome 5.15.1 CSS -->
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+	<!-- OneSignal -->
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+	<script>window.OneSignal = window.OneSignal || [];</script>
+
+	<script src='OneSignalSDKWorker.js'></script>
+
+	<script>
+		window.OneSignal = window.OneSignal || [];
+		OneSignal.push(function () {
+			OneSignal.init({
+				appId: "e73cedba-799c-47c0-941c-b92f10fde3d5",
+				safari_web_id: "web.onesignal.auto.4345f3b9-0648-4376-838e-008c1d802430",
+				notifyButton: {
+					enable: true,
+				},
+			});
+		});
+	</script>
+
 </head>
 
 <main>
@@ -39,7 +59,7 @@
 					<h2 class="radio-text">La Radio del Camino</h2>
 					<h3 class="subtitle">MICAPA</h3>
 					<div id='sonic_title'></div>
-					
+
 				</div>
 
 
@@ -51,6 +71,8 @@
 		</div>
 
 	</div>
+
+
 
 	<link href="content/addons/footer.html" rel="import" />
 
