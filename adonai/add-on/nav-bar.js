@@ -39,6 +39,29 @@ anchor.push(document.getElementById('anchor-4'));
 anchor.push(document.getElementById('anchor-5'));
 
 
+let verso1;
+let verso2;
+let verso3;
+let precoro;
+let coro;
+let puente;
+
+verso1 = document.getElementById('Verso-1').id;
+verso2 = document.getElementById('Verso-2').value;
+console.log(`VERSO 2 ES ${verso2}`)
+verso3 = document.getElementById('Verso-3');
+precoro = document.getElementById('Precoro');
+coro = document.getElementById('Coro');
+puente = document.getElementById('Puente');
+
+console.log(verso1)
+
+if(verso1 !== null){
+    anchor.push(verso1);
+}
+
+console.log(anchor);
+
 // <div class="col">
 // <div class="content-link">
 //     <a class="link" href="#">${i+1}</a>
@@ -85,7 +108,6 @@ let content3 = ``;
 
    navDiv.innerHTML = contentF;
   
-
 
 
 

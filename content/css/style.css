@@ -19,38 +19,25 @@ body:after {
 	content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg);
 }
 
-.content-player {
-	position: absolute;
-	width: 50%;
-	height: 450px;
-	top: 0px;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	padding: 5px 5%;
-	text-align: center;
-	box-sizing: border-box;
-	/*box-shadow: 0 0 21px 0px rgba(0,0,0,0.3);*/
-	border-radius: 10px;
+
+.information .title {
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	color: #363636;
+	font-weight: 800;
+	font-size: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-	.content-player {
-		width: 95%;
-	}
+.description {
+	text-align: left;
+	font-family: 'Nunito', sans-serif;
+	color: #363636;
+	font-weight: 700;
+	font-size: 18px;
+}
 
-	.cont h3 {
-		font-size: 5px;
-	}
-
-
-	.cont time {
-		font-family: 'Lato';
-		font-size: 12px;
-		color: #999;
-
-	}
+.resalta {
+	color: #2b9e07;
 }
 
 .cont {
@@ -71,9 +58,64 @@ body:after {
 
 }
 
+@media only screen and (min-width: 801px) {
+	.content-radio {
+	
+	}
+	
+	.content-player {
+		position: fixed;
 
+		max-width: 500px;
+		text-align: center;
+		padding: 100px 0px 0px 100px;
+		z-index: 200;
+	}
 
-@media only screen and (max-width: 480px) {}
+	img.logo-player {
+		width: 30%;
+		margin: auto;
+	}
+
+	.information {
+		margin-top: 22%;
+		padding-right: 150px;
+	}
+	
+
+}
+
+@media only screen and (max-width: 800px) {
+	.content-radio {
+	margin-top: 80px;
+	}
+	
+	.content-player {
+		text-align: center;
+		padding: 0px 100px 0px 100px;
+	}
+
+	img.logo-player {
+		width: 40%;
+		margin-top: 10px;
+	}
+
+	
+
+	.information {
+		border: #646464;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 15px;
+		margin-top: 50px;
+		margin-left: 40px;
+		margin-right: 30px;
+		margin-bottom: 50px;
+		padding: 45px;
+	}
+	
+	
+}
 
 .embed-container {
 	position: relative;
@@ -88,38 +130,36 @@ body:after {
 	height: 100%;
 }
 
-img.logo-player {
-	width: 30%;
-	margin: auto;
-}
 
 h2.radio-text {
 	font-family: 'Nunito', sans-serif;
 	color: #32A6D8;
 	font-weight: 900;
-	font-size: 22px;
+	font-size: 25px;
 }
 
 h3.subtitle {
 	font-family: 'Nunito''bold', sans-serif;
 	color: #2b9e07;
 	font-weight: 600;
+	font-size: 18px;
 }
 
 #sonic_title {
 	font-family: 'Nunito''bold', sans-serif;
-	color: #555555;
+	color: #757575;
 	font-weight: 500;
 }
 
 #sonic_listeners {
 	font-family: 'Nunito''bold', sans-serif;
-	color: #ffffff;
+	color: #004a61;
 	font-weight: 500;
+	margin-bottom: 10px;
 }
 
 #sonic_listeners::before {
-	content: "Oyentes: ";
+	content: "Ya somos: ";
 }
 
 .contenedor {

@@ -9,7 +9,7 @@
 	<link rel='stylesheet' href='content/css/style.css'>
 	<link rel='stylesheet' href='content/css/audio-tag.css'>
 	<script id='sonic_js' data-port='8062' src='https://mars.streamerr.co/cp/widgets.js'></script>
-	<link rel="icon" type="image/x-icon" href="files/SVG/micapa@LOGO.svg">
+	<link rel="icon" type="image/x-icon" href="content/files/SVG/micapa@LOGO.svg">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,11 @@
 	<link rel="stylesheet" href="content/css/social-media.css">
 	<!-- Font Awesome 5.15.1 CSS -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 	<!-- OneSignal -->
 	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
@@ -43,33 +48,63 @@
 
 </head>
 
-<main>
+<body>
 	<!-- partial:index.partial.html -->
-	<div class="row">
-		<div class="col">
-			<article class="content-player">
-				<!-- Oyentes: <div id='sonic_uniq'></div> -->
+	<div class="content-radio">
+		<div class="row">
+			<div class="col-sm">
+				<article class="content-player">
+					<div>
+						<!-- Oyentes: <div id='sonic_uniq'></div> -->
 
-				<div>
-					<div class="subtitle" id='sonic_listeners'></div>
-					<img class="logo-player" src="content/files/icon/MICAPALOGO.png" alt="micapa-logo">
+						<div>
+							<div class="subtitle" id='sonic_listeners'></div>
+							<p class=""><a 
+								href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20mejor%20radio%20%F0%9F%8E%99%20del%20mundo%20%F0%9F%8C%90,%20La%20Radio%20del%20Camino%20%20%F0%9F%A4%A9%20micapa.net/radio%20%F0%9F%91%88">
+							Invita a más gente, haciendo clic aquí</a>
+						</p>
+							<img class="logo-player" src="content/files/icon/MICAPALOGO.png" alt="micapa-logo">
+						</div>
+
+						<div class="contenedor">
+							<h2 class="radio-text">La Radio del Camino</h2>
+							<h3 class="subtitle">MICAPA</h3>
+							<div id='sonic_title'></div>
+							
+
+						</div>
+
+
+						<audio class="audio" controls="controls" autoplay>
+							<source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
+						</audio>
+					</div>
+				</article>
+			</div>
+			<div class="col-sm">
+				<div class="information">
+					<div class="content-info">
+						<h3 class="title">La Radio del Camino, la mejor radio del mundo.</h3>
+						<p class="description">- Conectate con el creado todos los días a cualquier hora y disfruta de
+							tu
+							alabanza favorita.</p>
+						<p class="description">- Sintoniza tu programa favorito (Raices de bendición) donde tus mañanas
+							ya no son iguales. De lunes a
+							viernes de
+							<span class="resalta">9:00 a.m. - 11:00 a.m.</span> Donde te traeremos curiosidades,
+							concursos,
+							premios, disfrutando y conociendo más del Señor, junto al pastor Elvin Galeano y la hermana
+							Lesli Bonilla.
+						</p>
+						<p class="title">¿Quieres interactuar con nosotros?</p>
+						<p class="description"><a
+								href="https://api.whatsapp.com/send?phone=50433889144&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9">-
+								Escríbenos
+								haciendo clic aquí. 👈</a></p>
+					</div>
 				</div>
-
-				<div class="contenedor">
-					<h2 class="radio-text">La Radio del Camino</h2>
-					<h3 class="subtitle">MICAPA</h3>
-					<div id='sonic_title'></div>
-
-				</div>
-
-
-				<audio class="audio" controls="controls" autoplay>
-					<source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
-				</audio>
-
-			</article>
+			</div>
 		</div>
-
 	</div>
 
 
@@ -82,5 +117,15 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js'></script>
 	<script src="content/javascript/player.js"></script>
 
-
-</main>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
