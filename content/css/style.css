@@ -145,7 +145,7 @@ h3.subtitle {
 	font-size: 18px;
 }
 
-div.subtitle::after {
+#sonic_listeners::after {
 	content: ' personas'; 
 }
 
