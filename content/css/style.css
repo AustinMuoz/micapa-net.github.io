@@ -145,6 +145,10 @@ h3.subtitle {
 	font-size: 18px;
 }
 
+div.subtitle::after {
+	content: ' personas';
+}
+
 #sonic_title {
 	font-family: 'Nunito''bold', sans-serif;
 	color: #757575;
