@@ -146,7 +146,7 @@ h3.subtitle {
 }
 
 div.subtitle::after {
-	content: ' personas';
+	content: ' personas'; 
 }
 
 #sonic_title {
