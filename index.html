@@ -1,215 +1,151 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="es"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Virtual Reality">
-    <meta name="description" content="">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MICAPA | La Radio del camino</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel='stylesheet' href='content/css/mediaelementplayer.min.css'>
+  <link rel='stylesheet' href='content/css/style.css'>
+  <link rel='stylesheet' href='content/css/audio-tag.css'>
+  <script id='sonic_js' data-port='8062' src='https://mars.streamerr.co/cp/widgets.js'></script>
+  <link rel="icon" type="image/x-icon" href="content/files/SVG/micapa@LOGO.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Social Media -->
+  <link rel="stylesheet" href="content/css/social-media.css">
+  <!-- Font Awesome 5.15.1 CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-	<meta name="viewport" content="width=device-width">
-	<link rel='stylesheet' href='content/css/mediaelementplayer.min.css'>
-	<link rel='stylesheet' href='content/css/style.css'>
-	<link rel='stylesheet' href='content/css/audio-tag.css'>
-	<script id='sonic_js' data-port='8062' src='https://mars.streamerr.co/cp/widgets.js'></script>
-	<link rel="icon" type="image/x-icon" href="content/files/SVG/micapa@LOGO.svg">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
+  <!-- OneSignal -->
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>window.OneSignal = window.OneSignal || [];</script>
 
-	<!-- Social Media -->
-	<link rel="stylesheet" href="content/css/social-media.css">
-	<!-- Font Awesome 5.15.1 CSS -->
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+  <script src='OneSignalSDKWorker.js'></script>
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "e73cedba-799c-47c0-941c-b92f10fde3d5",
+        safari_web_id: "web.onesignal.auto.4345f3b9-0648-4376-838e-008c1d802430",
+        notifyButton: {
+          enable: true,
+        },
+      });
+    });
+  </script>
+
+  <!-- Hotjar -->
+  <!-- Hotjar Tracking Code for my site -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 3282933, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 
-	<!-- OneSignal -->
-	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-	<script>window.OneSignal = window.OneSignal || [];</script>
+</head>
 
-	<script src='OneSignalSDKWorker.js'></script>
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="content-radio">
 
-	<script>
-		window.OneSignal = window.OneSignal || [];
-		OneSignal.push(function () {
-			OneSignal.init({
-				appId: "e73cedba-799c-47c0-941c-b92f10fde3d5",
-				safari_web_id: "web.onesignal.auto.4345f3b9-0648-4376-838e-008c1d802430",
-				notifyButton: {
-					enable: true,
-				},
-			});
-		});
-	</script>
+    <div class="row">
+      <div class="col">
+        <article class="content-player">
+          <h2 class="radio-text">La Radio del Camino</h2>
+          <div>
 
-	<title>La Radio del Camino</title>
-	
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-	<link rel="stylesheet" href="Page-11.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 5.1.4, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i">
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": ""
-}</script>
-    <meta name="theme-color" content="#277ed0">
-    <meta property="og:title" content="Page 11">
-    <meta property="og:type" content="website">
-  </head>
-  <body data-home-page="https://website3510029.nicepage.io/Page-11.html?version=7178e7d6-6a30-4af9-a029-275ab78816d0" data-home-page-title="Page 11" class="u-body u-grey-5 u-overlap u-xl-mode" data-lang="es"><header class="u-clearfix u-header u-header" id="sec-a1fc"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;" wfd-invisible="true">
-            <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container" wfd-invisible="true">
-            <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#" style="padding: 10px;">Radio</a>
-</li><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#" style="padding: 10px;"></a>
-</li><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#" style="padding: 10px;"></a>
-</li><li class="u-nav-item"><a class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="#" style="padding: 10px;"></a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse" wfd-invisible="true">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" style="padding: 10px 20px;">Radio</a>
-</li></ul>
-              </div>
+            <div>
+              <img class="logo-player" src="content/files/icon/MICAPALOGO.png" alt="micapa-logo">
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
-          </div>
-        </nav>
-      </div></header>
-
-	
-    <section class="u-clearfix u-grey-5 u-section-1" id="carousel_a6cd">
-      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-align-center u-container-style u-layout-cell u-right-cell u-size-33-lg u-size-33-md u-size-33-sm u-size-33-xs u-size-34-xl u-layout-cell-1">
-              <div class="u-container-layout u-container-layout-1">
-                
-				<article class="content-player">
-					<div>
-						<!-- Oyentes: <div id='sonic_uniq'></div> -->
-
-						<div>
-							
-							<img class="logo-player" src="content/files/icon/MICAPALOGO.png" alt="micapa-logo">
-						</div>
-
-						<div class="contenedor">
-							<div id='sonic_title'></div>
-						</div>
-
-
-						<audio class="audio" controls="controls" autoplay>
-							<source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
-						</audio>
-					</div>
-				</article>
-			
-			
-			
-				</div>
+            <div class="contenedor">
+              <div id='sonic_title'></div>
             </div>
 
-            <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-26-xl u-size-27-lg u-size-27-md u-size-27-sm u-size-27-xs u-layout-cell-2">
-              <div class="u-container-layout u-valign-middle u-container-layout-2">
-                <div class="u-shape u-shape-svg u-text-white u-shape-1">
-                  <svg class="u-svg-link" preserveAspectRatio="none" viewBox="0 0 160 160" style=""><use xlink:href="#svg-36ae"></use></svg>
-                  <svg class="u-svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-36ae" style="enable-background:new 0 0 160 160;"><path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
-	s80-35.8,80-80S124.2,0,80,0L80,0z"></path></svg>
-                </div>
-                <h1 class="u-custom-font u-font-ubuntu u-text u-text-2"> La Radio del Camino</h1>
-
-				<div class="subtitle" id='sonic_listeners'></div>
-				<a href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20Mejor%20Alternativa%20en%20Radio%20Cristiana%20%F0%9F%8E%99%20%20La%20Radio%20Del%20Camino%20%F0%9F%8E%BC%20micapa.net/radio%20%F0%9F%91%88%F0%9F%8F%BB" class="btn btn-primary">INVITAR A MÁS</a>
-                <p class=""> La Radio del Camino, la mejor radio del mundo.- Conectate con el creador todos los días a cualquier hora y disfruta de tu alabanza favorita.</p> 
-				<a href="https://api.whatsapp.com/send?phone=50433889144&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9" class="btn btn-success" role="button">ESCRÍBENOS</a>
-		
-			</div>
-            </div>
+            <audio class="audio" controls="controls" autoplay>
+              <source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
+            </audio>
           </div>
-        </div>
+        </article>
       </div>
-    </section>
 
-    <section class="u-align-center u-clearfix u-white u-section-2" id="sec-ebea">
-      <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Raíces de Bendición</h2>
-        <div class="u-accordion u-spacing-2 u-accordion-1">
-			<p>- Sintoníza tu programa favorito (Raíces de bendición) donde tus mañanas ya no son iguales.</p>
-          <div class="u-accordion-item">
-            <a class="active u-accordion-link u-border-1 u-border-active-grey-25 u-border-grey-30 u-border-hover-grey-30 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-active-black u-text-grey-50 u-text-hover-black u-accordion-link-1" id="link-accordion-7c0e" aria-controls="accordion-7c0e" aria-selected="true">
-              <span class="u-accordion-link-text">Horarios</span><span class="u-accordion-link-icon u-icon u-text-grey-40 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xlink:href="#svg-efea"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-efea" style="enable-background:new 0 0 512 512;"><g><g><path d="M509.121,125.966c-3.838-3.838-10.055-3.838-13.893,0L256.005,365.194L16.771,125.966c-3.838-3.838-10.055-3.838-13.893,0    c-3.838,3.838-3.838,10.055,0,13.893l246.18,246.175c1.842,1.842,4.337,2.878,6.947,2.878c2.61,0,5.104-1.036,6.946-2.878    l246.17-246.175C512.959,136.021,512.959,129.804,509.121,125.966z"></path>
-</g>
-</g></svg></span>
-            </a>
-            <div class="u-accordion-active u-accordion-pane u-align-left u-container-style u-accordion-pane-1" id="accordion-7c0e" aria-labelledby="link-accordion-7c0e">
-              <div class="u-container-layout u-valign-top u-container-layout-1">
-                <ul class="u-custom-list u-text u-text-2">
-                  <li>
-                    <div class="u-list-icon">
-                      <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">–</div>
-                    </div>De lunes a viernes <br> de&nbsp;9:00 a.m. - 11:00 a.m.&nbsp; <br> Donde te traeremos curiosidades, concursos, premios, disfrutando y conociendo más del Señor.<br>Junto al pastor Elvin Galeano y la hermana Lesli Bonilla.
-                  </li>
-                  
-                </ul>
-              </div>
-            </div>
+      <div class="col">
+        <div class="content-info">
+          <div class="subtitle">
+            <i class="fa fa-headphones"> <a id='sonic_listeners'></a></i>
           </div>
-          
-          
-          </div>
+          <br>
+          <a href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20Mejor%20Alternativa%20en%20Radio%20Cristiana%20%F0%9F%8E%99%20%20La%20Radio%20Del%20Camino%20%F0%9F%8E%BC%20micapa.net/radio%20%F0%9F%91%88%F0%9F%8F%BB"
+            class="btn btn-success"><i class="fa fa-share-alt" aria-hidden="true"></i> COMPARTÍR</a>
+          <a href="https://api.whatsapp.com/send?phone=50433889144&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9"
+            class="btn btn-primary" role="button"><i class="fa fa-comments" aria-hidden="true"></i> ESCRÍBENOS</a>
         </div>
+
+        <div class="information">
+          <h2 class="title"> La Radio del Camino, la mejor radio del mundo.</h3>
+            <p>
+              <li>Tu mejor alternativa en radio cristiana, conectate con el creador todos los días a cualquier hora y
+                disfruta de tu alabanza favorita.</li>
+            </p> <br>
+
+            <h3 class="subtitle"><i class="fa fa-microphone" aria-hidden="true"></i> Raíces de Bendición</h3>
+            <p>- Sintoníza tu programa favorito (Raíces de bendición) donde tus mañanas ya no son iguales.</p>
+            <li>De lunes a viernes de&nbsp;9:00 a.m. - 11:00 a.m.&nbsp; <br> Donde te traeremos curiosidades,
+              concursos, premios, disfrutando y conociendo más del Señor.<br>Junto al pastor Elvin Galeano y la
+              hermana Lesli Bonilla.
+            </li>
+        </div>
+
+
+
+
+
       </div>
-    </section>
-    <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
-background-color: #f2f2f2 !important
-}</style>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-palette-5-base u-footer" id="sec-701a"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">MICAPA 2022</p>
-      </div></footer>
-    
+    </div>
+  </div>
+  </div>
 
-	<link href="content/addons/footer.html" rel="import" />
+  <footer>
+    <div>
+      <p class="content-foot">MICAPA 2022</p>
+    </div>
+  </footer>
 
 
-	<!-- partial -->
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js'></script>
-	<script src="content/javascript/player.js"></script>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-  
-</body></html>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js'></script>
+  <script src="content/javascript/player.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
