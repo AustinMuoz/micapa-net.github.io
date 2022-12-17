@@ -6,15 +6,16 @@
 	margin: 0;
 }
 
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+html,
+body {
+	max-width: 100% !important;
+	overflow-x: hidden !important;
 }
 
 body {
 	background: #fff;
 	font-family: 'Lato';
-	
+
 }
 
 /*👇 for preload play/pause svg*/
@@ -27,7 +28,7 @@ body:after {
 	content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg);
 }
 
-footer{
+footer {
 	width: auto;
 	height: 50px;
 	padding: 50px;
@@ -75,11 +76,6 @@ footer{
 
 }
 
-.content-info{
-	margin: 100px 20px 0px 20px;
-	padding-left: 20px;
-}
-
 
 .information {
 	background-color: #dee8eb;
@@ -91,18 +87,23 @@ footer{
 	padding: 45px;
 }
 
-@media only screen and (min-width: 801px) {
+
+
+@media only screen and (min-width: 1501px) {
 	/* .content-radio {
 	
 	} */
-	
+
 	.content-player {
 		position: fixed;
-
 		max-width: 500px;
 		text-align: center;
-		padding: 100px 0px 0px 100px;
-		z-index: 200;
+		margin: 260px 0px 0px 300px;
+		z-index: 2;
+	}
+
+	.content-info {
+		margin: 100px 20px 80px 5%;
 	}
 
 	img.logo-player {
@@ -112,21 +113,56 @@ footer{
 
 	.information {
 		margin-top: 50px;
+		margin-bottom: 250px;
 		max-width: 500px;
-		line-height : 35px;
+		line-height: 25px;
 	}
-	
+
 
 }
 
-@media only screen and (max-width: 800px) {
-	.content-radio {
-	margin-top: 80px;
+@media only screen and (max-width: 1500px) {
+	.content-player {
+		max-width: 900px;
+		text-align: center;
+		margin-top: 20%;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
-	
+
+	.content-info {
+		margin: 50px 20px 0px 15%;
+	}
+
+	img.logo-player {
+		width: 30%;
+	}
+
+	.information {
+		margin-top: 50px;
+		max-width: 900px;
+		line-height: 35px;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.content-radio {
+		margin-top: 80px;
+	}
+
 	.content-player {
 		text-align: center;
-		padding: 0px 100px 0px 100px;
+		margin: 10px 50px 10px 50px;
+	}
+
+	.content-info {
+		margin: 50px 20px 0px 10%;
+	}
+
+	.social-content{
+		margin-bottom: 5px;
 	}
 
 	img.logo-player {
@@ -140,12 +176,10 @@ footer{
 		margin-right: 30px;
 		margin-bottom: 50px;
 		padding: 45px;
-		line-height : 20px;
+		line-height: 20px;
 	}
 
-	
-	
-	
+
 }
 
 .embed-container {
@@ -170,24 +204,24 @@ h2.radio-text {
 }
 
 .subtitle {
-	font-family: 'Nunito''bold', sans-serif !important;
+	font-family: 'Nunito' 'bold', sans-serif !important;
 	color: #2b9e07;
 	font-weight: 600;
 	font-size: 18px;
 }
 
 #sonic_listeners::after {
-	content: ' '; 
+	content: ' ';
 }
 
 #sonic_title {
-	font-family: 'Nunito''bold', sans-serif;
+	font-family: 'Nunito' 'bold', sans-serif;
 	color: #757575;
 	font-weight: 500;
 }
 
 #sonic_listeners {
-	font-family: 'Nunito''bold', sans-serif;
+	font-family: 'Nunito' 'bold', sans-serif;
 	color: #004a61;
 	font-weight: 500;
 	margin-bottom: 10px;

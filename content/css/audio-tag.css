@@ -110,7 +110,7 @@
 .mejs-controls .mejs-play:after {
     position: absolute;
     content: "";
-    background: url(../files/SVG/play.svg) no-repeat;
+    background: url(../files/svg/play.svg) no-repeat;
     width: 17px;
     height: 22px;
     top: 0;
@@ -125,7 +125,7 @@
 .mejs-controls .mejs-pause:after {
     position: absolute;
     content: "";
-    background: url(../files/SVG/pause.svg) no-repeat;
+    background: url(../files/svg/pause.svg) no-repeat;
     width: 13px;
     height: 22px;
     top: 0;

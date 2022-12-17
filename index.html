@@ -4,12 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>La Radio del camino</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name=»description» content="Únete a la mejor alternativa en radio Cristiana, conectate con el creador todos los días a cualquier hora y disfruta de tu alabanza favorita." />
+  <link rel="icon" type="image/x-icon" href="content/files/svg/micapa@LOGO.svg">
+
   <link rel='stylesheet' href='content/css/mediaelementplayer.min.css'>
   <link rel='stylesheet' href='content/css/style.css'>
   <link rel='stylesheet' href='content/css/audio-tag.css'>
+  <!-- Social Media -->
+  <link rel="stylesheet" href="content/css/social-media.css">
+
+  <!-- Streamer Mars - streamerr.co JS -->
   <script id='sonic_js' data-port='8062' src='https://mars.streamerr.co/cp/widgets.js'></script>
-  <link rel="icon" type="image/x-icon" href="content/files/SVG/micapa@LOGO.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +23,17 @@
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <!-- Social Media -->
-  <link rel="stylesheet" href="content/css/social-media.css">
   <!-- Font Awesome 5.15.1 CSS -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
   <!-- OneSignal -->
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
@@ -59,8 +66,6 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
-
-
 </head>
 
 <body>
@@ -68,13 +73,13 @@
   <div class="content-radio">
 
     <div class="row">
-      <div class="col">
+      <div class="col-xl">
         <article class="content-player">
           <h2 class="radio-text">La Radio del Camino</h2>
           <div>
 
             <div>
-              <img class="logo-player" src="content/files/SVG/micapa@LOGO.svg" alt="micapa-logo">
+              <img class="logo-player" src="content/files/svg/micapa@LOGO.svg" alt="micapa-logo">
             </div>
             <div class="contenedor">
               <div id='sonic_title'></div>
@@ -90,13 +95,35 @@
       <div class="col">
         <div class="content-info">
           <div class="subtitle">
-            <i class="fa fa-headphones"> <a id='sonic_listeners'></a></i>
+            <i class="bi bi-headphones"> <a id='sonic_listeners'></a></i>
           </div>
           <br>
-          <a href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20Mejor%20Alternativa%20en%20Radio%20Cristiana%20%F0%9F%8E%99%20%20La%20Radio%20Del%20Camino%20%F0%9F%8E%BC%20radio.micapa.net/%20%F0%9F%91%88%F0%9F%8F%BB"
-            class="btn btn-success"><i class="fa fa-share-alt" aria-hidden="true"></i> COMPARTÍR</a>
-          <a href="https://api.whatsapp.com/send?phone=50433889144&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9"
-            class="btn btn-primary" role="button"><i class="fa fa-comments" aria-hidden="true"></i> ESCRÍBENOS</a>
+
+          <!-- Social Button Share -->
+          <div class="social-content">
+            <div class="btn-group btn-group-sm">
+              <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-share" aria-hidden="true"></i> &nbsp; COMPARTIR
+                </button>
+                <ul class="dropdown-menu btn-group-sm">
+                  <li><a class="dropdown-item"
+                      href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20Mejor%20Alternativa%20en%20Radio%20Cristiana%20%F0%9F%8E%99%20%20La%20Radio%20Del%20Camino%20%F0%9F%8E%BC%20radio.micapa.net/%20%F0%9F%91%88%F0%9F%8F%BB" target="_blank"><i
+                        class="bi bi-whatsapp"></i> WhatsApp</a></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https://radio.micapa.net" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+                </ul>
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=50433889144&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9" target="_blank"
+                class="btn btn-success btn-sm" role="button" ><i class="bi bi-whatsapp" aria-hidden="true"></i> ESCRÍBENOS</a>
+
+
+            </div>
+
+
+            <!-- <i class="bi bi-facebook" style="font-size: 2rem; color: cornflowerblue;"></i> -->
+
+          </div>
         </div>
 
         <div class="information">
@@ -108,8 +135,8 @@
 
             <h3 class="subtitle"><i class="fa fa-microphone" aria-hidden="true"></i> Raíces de Bendición</h3>
             <p>- Sintoníza tu programa favorito (Raíces de bendición) donde tus mañanas ya no son iguales.</p>
-            <li>De lunes a viernes de&nbsp;9:00 a.m. - 11:00 a.m.&nbsp; <br> Donde te traeremos curiosidades,
-              concursos, premios, disfrutando y conociendo más del Señor.<br>Junto al pastor Elvin Galeano y la
+            <li>De lunes a viernes de 9:00 a.m. - 11:00 a.m.<br> Donde te traeremos curiosidades,
+              concursos, premios y mucho más; disfrutando y conociendo más del Señor, junto al pastor Elvin Galeano y la
               hermana Lesli Bonilla.
             </li>
         </div>
@@ -136,6 +163,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js'></script>
   <script src="content/javascript/player.js"></script>
+
+  <!-- Social JS -->
+  <script src="/content/javascript/social_links.js"></script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
