@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>La Radio del camino</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name=»description» content="Únete a la mejor alternativa en radio Cristiana, conectate con el creador todos los días a cualquier hora y disfruta de tu alabanza favorita." />
+  <meta name=»description»
+    content="Únete a la mejor alternativa en radio Cristiana, conectate con el creador todos los días a cualquier hora y disfruta de tu alabanza favorita." />
   <link rel="icon" type="image/x-icon" href="content/files/svg/micapa@LOGO.svg">
 
   <link rel='stylesheet' href='content/css/mediaelementplayer.min.css'>
@@ -69,85 +70,75 @@
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
-  <div class="content-radio">
+  <header>
 
-    <div class="row">
-      <div class="col-xl">
-        <article class="content-player">
+  </header>
+  <div class="flex-container">
+    <section class="player-container">
+      <div class="player">
+        <div class="logo-player-container">
+          <img class="logo-player" src="content/files/svg/micapa@LOGO.svg" alt="micapa-logo">
+          <!-- Audio MediaElement -->
+          <audio class="audio" controls="controls" autoplay>
+            <source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
+          </audio>
+        </div>
+
+        <!-- Listeners -->
+        <div class="contenedor">
           <h2 class="radio-text">La Radio del Camino</h2>
-          <div>
-
-            <div>
-              <img class="logo-player" src="content/files/svg/micapa@LOGO.svg" alt="micapa-logo">
-            </div>
-            <div class="contenedor">
-              <div id='sonic_title'></div>
-            </div>
-
-            <audio class="audio" controls="controls" autoplay>
-              <source type="audio/mpeg" src="https://mars.streamerr.co:7030/stream?type=http">
-            </audio>
-          </div>
-        </article>
-      </div>
-
-      <div class="col">
-        <div class="content-info">
-          <div class="subtitle">
-            <i class="bi bi-headphones"> <a id='sonic_listeners'></a></i>
-          </div>
-          <br>
-
-          <!-- Social Button Share -->
-          <div class="social-content">
-            <div class="btn-group btn-group-sm">
-              <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <i class="bi bi-share" aria-hidden="true"></i> &nbsp; COMPARTIR
-                </button>
-                <ul class="dropdown-menu btn-group-sm">
-                  <li><a class="dropdown-item"
-                      href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20Mejor%20Alternativa%20en%20Radio%20Cristiana%20%F0%9F%8E%99%20%20La%20Radio%20Del%20Camino%20%F0%9F%8E%BC%20radio.micapa.net/%20%F0%9F%91%88%F0%9F%8F%BB" target="_blank"><i
-                        class="bi bi-whatsapp"></i> WhatsApp</a></li>
-                  <li><a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https://radio.micapa.net" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
-                </ul>
-              </div>
-              <a href="https://api.whatsapp.com/send?phone=50493671851&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9" target="_blank"
-                class="btn btn-success btn-sm" role="button" ><i class="bi bi-whatsapp" aria-hidden="true"></i> ESCRÍBENOS</a>
-
-
-            </div>
-
-
-            <!-- <i class="bi bi-facebook" style="font-size: 2rem; color: cornflowerblue;"></i> -->
-
-          </div>
+          <div id='sonic_title'></div>
         </div>
 
-        <div class="information">
-          <h2 class="title"> La Radio del Camino, la mejor radio del mundo.</h3>
-            <p>
-              <li>Tu mejor alternativa en radio cristiana, conectate con el creador todos los días a cualquier hora y
-                disfruta de tu alabanza favorita.</li>
-            </p> <br>
-
-            <h3 class="subtitle"><i class="fa fa-microphone" aria-hidden="true"></i> Raíces de Bendición</h3>
-            <p>- Sintoníza tu programa favorito (Raíces de bendición) donde tus mañanas ya no son iguales.</p>
-            <li>De lunes a viernes de 9:00 a.m. - 11:00 a.m.<br> Donde te traeremos curiosidades,
-              concursos, premios y mucho más; disfrutando y conociendo más del Señor, junto al pastor Elvin Galeano y la
-              hermana Lesli Bonilla.
-            </li>
-        </div>
-
-
-
-
-
       </div>
-    </div>
-  </div>
+    </section>
+
+    <!-- Social Button Share -->
+    <section class="social-container">
+      <div class="subtitle">
+        <i class="bi bi-headphones"> <a id='sonic_listeners'></a></i>
+      </div>
+      <div class="social-content">
+        <div class="btn-group btn-group-sm">
+          <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi bi-share" aria-hidden="true"></i> &nbsp; COMPARTIR
+            </button>
+            <ul class="dropdown-menu btn-group-sm">
+              <li><a class="dropdown-item"
+                  href="https://api.whatsapp.com/send/?text=%C3%9Anete%20a%20la%20Mejor%20Alternativa%20en%20Radio%20Cristiana%20%F0%9F%8E%99%20%20La%20Radio%20Del%20Camino%20%F0%9F%8E%BC%20radio.micapa.net/%20%F0%9F%91%88%F0%9F%8F%BB"
+                  target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+              <li><a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https://radio.micapa.net"
+                  target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+            </ul>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=50493671851&text=%C2%A1Dios%20le%20bendiga%20pastor%20Elvin%20y%20hermana%20Lesli!%20%F0%9F%A4%A9"
+            target="_blank" class="btn btn-success btn-sm" role="button"><i class="bi bi-whatsapp"
+              aria-hidden="true"></i>
+            ESCRÍBENOS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information -->
+    <section class="information-container">
+      <div class="information">
+        <h2 class="title"> La Radio del Camino, la mejor radio del mundo.</h3>
+          <p>
+            <li>Tu mejor alternativa en radio cristiana, conectate con el creador todos los días a cualquier hora y
+              disfruta de tu alabanza favorita.</li>
+          </p> <br>
+
+          <h3 class="subtitle"><i class="fa fa-microphone" aria-hidden="true"></i> Raíces de Bendición</h3>
+          <p>- Sintoníza tu programa favorito (Raíces de bendición) donde tus mañanas ya no son iguales.</p>
+          <li>De lunes a viernes de 9:00 a.m. - 11:00 a.m.<br> Donde te traeremos curiosidades,
+            concursos, premios y mucho más; disfrutando y conociendo más del Señor, junto al pastor Elvin Galeano y
+            la
+            hermana Lesli Bonilla.
+          </li>
+      </div>
+    </section>
   </div>
 
   <footer>

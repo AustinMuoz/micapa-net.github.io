@@ -3,12 +3,14 @@
 */
 
 .mejs-container {
-    background: rgb(224, 224, 224);
-    font-family: Helvetica, Arial;
+    margin-top: 50px;
+    margin-bottom: -95px;
+    margin-left: 45px;
+    background: #d1060600;
     text-align: left;
     vertical-align: top;
     text-indent: 0;
-    width: 100% !important;
+    width: 100px !important;
     height: 50px !important;
     border-radius: 5px;
 }
@@ -38,7 +40,7 @@
 }
 
 .mejs-container .mejs-controls .mejs-time {
-    color: #fff;
+    /* color: #fff;
     display: block;
     height: 27px;
     width: auto;
@@ -48,19 +50,20 @@
     text-align: center;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+    box-sizing: content-box; */
 }
-
+/* TIME */
 .mejs-container .mejs-controls .mejs-time {
     position: absolute;
-    color: rgba(256, 256, 256, 0.3);
-    right: 10px;
+    color: #23a5d500;
+    right: 0px;
     bottom: 0;
     top: 0;
     margin: auto;
     font-family: 'Lato';
     font-size: 32px;
     pointer-events: none;
+    display:none;
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-float-corner {
@@ -68,16 +71,15 @@
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-float {
-    position: absolute;
-    background: rgb(224, 224, 224);
+    /* position: absolute;
+    background: rgb(10, 222, 250);
     width: 46px;
     height: 20px;
     border: none;
     top: -25px;
     margin-left: -18px;
     text-align: center;
-    color: #fff;
-    border-radius: 3px;
+    border-radius: 3px; */
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-float-current {
@@ -95,16 +97,19 @@
     position: relative;
 }
 
+/* Button PLAY/PAUSE */
 .mejs-controls .mejs-button button {
     margin: 0;
     padding: 0;
     position: relative;
     height: 100%;
     width: 100%;
-    border: 0 !important;
-    /*background: transparent;*/
-    background: rgb(222, 232, 235);
+    border: 0;
+    background: linear-gradient(-45deg, #ee9d52, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     outline: none;
+    border-radius: 50px;
 }
 
 .mejs-controls .mejs-play:after {
@@ -138,10 +143,8 @@
 }
 
 .mejs-controls .mejs-time-rail .mejs-time-total {
-    background: linear-gradient(-45deg, #ee9d52, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
 
+    display: none;
 }
 
 @keyframes gradient {
@@ -166,13 +169,13 @@ background-size: 50px 50px;
 animation: move 3s linear infinite;
 opacity: 0.1;
 } */
-/* 
+/*
 .mejs-controls .mejs-time-rail .mejs-time-current {
 background: linear-gradient(to right, #23c1c3, #948eff, #00ccff, #23c1c3, #e58eff);
 } */
 
 
-/* 
+/*
 .mejs-controls .mejs-button button:focus {
 outline: none;
 }
