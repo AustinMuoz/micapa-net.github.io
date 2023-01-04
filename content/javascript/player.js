@@ -1,3 +1,7 @@
 $('audio').mediaelementplayer({
-    features: ['playpause', 'progress', 'current', 'tracks', 'fullscreen']
+    features: ['playpause']
 });
+
+// $('audio').mediaelementplayer({
+//     features: ['playpause', 'progress', 'current', 'tracks', 'fullscreen']
+// });

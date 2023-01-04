@@ -33,10 +33,7 @@ body:after {
 }
 
 .player-container {
-	/*border-color: black;
-	border-width: 2px;
-	border-style: solid;*/
-	padding: 5px;
+	padding: 10px;
 	align-items: center;
 	text-align: center;
 }
@@ -55,20 +52,14 @@ body:after {
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(255, 255, 255);
-	box-shadow: #bbd9ff70 0px 20px 70px;
+	box-shadow: #a4ccff70 0px 20px 30px;
 	border-radius: 100%;
-	width: 300px;
-	height: 300px;
+	width: 320px;
+	height: 320px;
 }
 
 img.logo-player {
-	width: 150px;
-}
-
-.information-container {
-	/*border-color: black;
-	border-width: 2px;
-	border-style: solid;*/
+	width: 180px;
 }
 
 .information {
@@ -84,9 +75,6 @@ img.logo-player {
 	padding: 5px;
 }
 
-
-
-
 footer {
 	width: auto;
 	height: 50px;
@@ -95,7 +83,6 @@ footer {
 	text-align: center;
 	color: #646060;
 }
-
 
 .description {
 	text-align: left;
@@ -123,11 +110,6 @@ footer {
 	color: #999;
 
 }
-
-
-
-
-
 
 
 .embed-container {
