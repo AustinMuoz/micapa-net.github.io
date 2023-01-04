@@ -126,10 +126,10 @@ footer {
 }
 
 
-h2.radio-text {
-	color: #32A6D8;
+.radio-text {
+	color: #333333;
 	font-weight: 900;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .subtitle {
